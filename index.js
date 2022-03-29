@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors({ origin: '*' }));
 
 //Routes 
-app.use('./api/cars', require('./routes/cars.routes'));
+app.use('/api/cars', require('./routes/cars.routes'));
 
 //Server 
 app.listen(app.get('port'), () => {
